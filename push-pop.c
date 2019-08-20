@@ -58,12 +58,12 @@ void  main()
 {
   int c , d , exit=1;
 
-while(exit==1)
-{ 
-  printf("enter 1)push 2) pop 3)display 4)peak 5)exit\n");
-  scanf("%d",&c);
-  switch(c)
-    {
+   while(exit==1)
+     { 
+  	printf("enter 1)push 2) pop 3)display 4)peak 5)exit\n");
+  	scanf("%d",&c);
+  	switch(c)
+    	{
      
 	  case 1:{
 	  	printf("enter the number to input\n");
@@ -92,7 +92,7 @@ while(exit==1)
 	 	  break;
 
 	  default :printf("enter valid choice");
-   }
+     }
  }
  getch();
 
