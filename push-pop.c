@@ -94,6 +94,6 @@ void  main()
 	  default :printf("enter valid choice");
      }
  }
- getch();
+ 
 
 }
