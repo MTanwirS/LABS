@@ -7,40 +7,40 @@ class book
 	public static String author;
 	public static double price;
 	public static int num_pages;
-       book()
-      {
-    	name="xx";
-	    author="xx";
-      price = 0.00;
- 	     num_pages=0;
-      }
+        book()
+       {
+    		name="xx";
+	        author="xx";
+                price = 0.00;
+ 	        num_pages=0;
+       }
      book(String  n , String a , double p , int n_p)
       {
-     	name = n ;
-      author= a;
-	   price = p;
-	   num_pages= n_p;
+     		name = n ;
+      	        author= a;
+	        price = p;
+	        num_pages= n_p;
      } 
 
    public void set()
    {
-  Scanner s = new Scanner(System.in);
-  System.out.println("enter the name of the book");
- name = s.next();
- System.out.println("enter the name of the author");
- author = s.next();
- System.out.println("enter the price of  the book");
- price =s.nextDouble();
- System.out.println("how many pages does the book contain ?");
- num_pages=s.nextInt();
-}
+ 	 Scanner s = new Scanner(System.in);
+ 	 System.out.println("enter the name of the book");
+	 name = s.next();
+ 	 System.out.println("enter the name of the author");
+ 	 author = s.next();
+	 System.out.println("enter the price of  the book");
+	 price =s.nextDouble();
+	 System.out.println("how many pages does the book contain ?");
+	 num_pages=s.nextInt();
+  }
 
 public void get()
 {
-  System.out.println("Name :"+name);
- System.out.println("Author :"+author);
-System.out.println("Price :"+price);
-System.out.println("Number of pages :"+num_pages);
+ 	 System.out.println("Name :"+name);
+	 System.out.println("Author :"+author);
+	 System.out.println("Price :"+price);
+	 System.out.println("Number of pages :"+num_pages);
 
 }
 }
