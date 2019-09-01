@@ -50,7 +50,7 @@ class book_demo1
    public static void main(String args[])
       {
  
-      book b1 = new  book("Prathibha","R",999,100);
+      book b1 = new  book();
       b1.set();
       b1.get();
       }
