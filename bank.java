@@ -1,9 +1,10 @@
 import java.util.*;
+import java.lang.Math;
 class bank
 {
 public String name;
 public String acc_no;
-public float balance;
+public double balance=0;
 
 
 public void get_data()
@@ -42,13 +43,13 @@ public void display()
 class savings_acc extends bank
 {
 private int r = 5 ;
-public float ci;
+public double ci;
 
 	public void ci()
 	{
-			ci= = balance*(Math.pow((1+r) , 2));//assuming the duration of time is 2 years
+			ci=balance*(Math.pow((1+r) , 2));//assuming the duration of time is 2 years
 			System.out.println("the compound interest earned is :Rs. "+ci);
-			System out .println("Your balance after including compound interest is :Rs. "+(balance+ci));
+			System.out.println("Your balance after including compound interest is :Rs. "+(balance+ci));
 	}
 
 }
@@ -73,10 +74,10 @@ class demo_bank
 {
 	public static void main(String args[])
 	{ 
-		int exit=1 ; int c , e ;int a=1; balance = 0;
+		int exit=1 ; int c , e = 0 ;int a=1;
 		System.out.println("Welcome to xyz bank of india");
 		bank b = new bank();
-		saving_acc sav = new savings_acc();
+		savings_acc sav = new savings_acc();
 		current_acc cur = new current_acc();
 		while (a==1)
            {
@@ -95,7 +96,7 @@ class demo_bank
 		while(exit==1)
 		{
 			System.out.println("Do you want to 1) debit cash 2) withdraw cash 3) know my account details 4)To go back to home window ");
-			
+			Scanner s = new Scanner(System.in);
 			c = s.nextInt();
 			switch(c)
 			{
@@ -119,8 +120,13 @@ class demo_bank
 					break;
 				default : System.out.println("Please enter a valid option");
 			}
-                }
+    }
+  }
+}
 
 
 
 
+ 
+
+	
